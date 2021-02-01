@@ -1,3 +1,8 @@
 .app {
-    background-color: $red;
+    background-color: $primary;
+
+    @media #{$mobile-only} {
+        background-color: $alt;
+    }
+
 }

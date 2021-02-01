@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './styles/Web.scss';
+
 import styles from './App.module.scss';
 
 function App() {

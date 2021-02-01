@@ -1,1 +1,152 @@
-$red: red;
+$mobile-only: '(max-width:599px)';
+
+$tablet-portrait-up: '(min-width:600px)';
+$tablet-portrait-only: '(min-width:600px) and (max-width:960px)';
+$tablet-portrait-down: '(max-width:959px)';
+
+$tablet-landscape-up: '(min-width:960px)';
+$tablet-landscape-only: '(min-width:960px) and (max-width:1200px)';
+$tablet-landscape-down: '(max-width:1199px)';
+
+$laptop-up: '(min-width:1200px)';
+$laptop-only: '(min-width:1200px) and (max-width:1660px)';
+$laptop-down: '(max-width:1659px)';
+
+$desktop-up: '(min-width:1660px)';
+$desktop-only: '(min-width:1660px)';
+$desktop-down: '(max-width:2559px)';
+
+$highres-up: '(min-width:2560px)';
+
+$primary: #FFC700;
+$secondary:#BACDE2;
+$alt:#086BDE;
+
+$light0: white;
+$light1: #708099;
+$light2: #C8CDD5;
+$light3: #A2A9B4;
+
+$dark0: black;
+$dark1: #010020;
+$dark2: #091945;
+$dark3: #414960;
+
+$fontPrimary: "Hurme-Geometric-Sans-No.4";
+$fontSecondary: "Rubik";
+
+@mixin heading1() {
+    font-family: $fontPrimary;
+    color: $dark1;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+}
+
+@mixin heading2() {
+    font-family: $fontPrimary;
+    color: $dark1;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -0.5px;
+}
+
+@mixin heading3() {
+    font-family: $fontPrimary;
+    color: $dark1;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.8px;
+}
+
+@mixin heading4() {
+    font-family: $fontPrimary;
+    color: $dark1;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+@mixin heading5() {
+    font-family: $fontPrimary;
+    color: $dark1;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+}
+
+@mixin heading6() {
+    font-family: $fontSecondary;
+    color: $dark1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+}
+
+@mixin bodyText() {
+    font-family: $fontPrimary;
+    color: $dark1;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+}
+
+@mixin snippetText() {
+    font-family: $fontPrimary;
+    color: $dark1;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: -0.3px;
+}
+
+@mixin metaText() {
+    font-family: $fontPrimary;
+    color: $dark1;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+}
+
+.heading1 {
+    @include heading1();
+}
+
+.heading2 {
+    @include heading2();
+}
+
+.heading3 {
+    @include heading3();
+}
+
+.heading4 {
+    @include heading4();
+}
+
+.heading5 {
+    @include heading5();
+}
+
+.heading6 {
+    @include heading6();
+}
+
+.bodyText {
+    @include bodyText();
+}
+
+.snippetText {
+    @include snippetText();
+}
+
+.metaText {
+    @include metaText();
+}
